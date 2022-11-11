@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@500&display=swap');
 
 :root {
     --primary-color:hsla(212, 93%, 23%, 1);
@@ -15,11 +15,13 @@ a {
 }
 
 .header {
+    display: flex;
     background-color: var(--primary-color);
 }
 
 .header-logo {
     display: flex;
+    margin: 25px 5vw 31.5px 3vw;
 }
 
 .header-logo img {
@@ -33,7 +35,60 @@ a {
     color: var(--secondary-color);
 }
 
+.header-nav ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 34.5px;
+}
+
+.header-nav ul li a{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 34.5px 42px 34.5px 0px;
+    color: var(--secondary-color);  
+}
+
+.header-nav ul li a img{
+    margin-left: 20px;
+}
+
+.header-buttons {
+    margin-top: 35.5px;
+}
+
+.log-in-button {
+    background-color: hsla(45, 100%, 79%, 1);
+    color: var(--primary-color);
+    padding: 18.5px 40px 18.5px 40px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-right: 24px;
+}
+
+.try-whitepace-button {
+    background-color: hsla(213, 93%, 64%, 1);
+    color: var(--secondary-color);
+    padding: 18.5px 24px 18.5px 24px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
 .first-page {
     height: 100vh;
+    background-color: var(--primary-color);
+}
+
+.second-page {
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+.footer {
+    height: 81px;
     background-color: var(--primary-color);
 }
